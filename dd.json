@@ -1,0 +1,44 @@
+{
+  "-O3a1b2c3": {
+    "name": "USDT",
+    "network": "Tron (TRC20)",
+    "address": "TENSPky2n9W45yycAsvR2M6nwL128p7yto",
+    "qr": "/image/ustd.jpeg"
+  },
+  "-O3d4e5f6": {
+    "name": "Bitcoin",
+    "network": "BNB Smart Chain (BEP20)",
+    "address": "0x2dc61e8c703cf027876a7a7437d92b46d47d34db",
+    "qr": "/image/btc.jpeg"
+  },
+  "-O3g7h8i9": {
+    "name": "Ethereum",
+    "network": "Ethereum (ERC20)",
+    "address": "0x2dc61e8c703cf027876a7a7437d92b46d47d34db",
+    "qr": "/image/eth.jpeg"
+  },
+  "-O3j1k2l3": {
+    "name": "BNB",
+    "network": "opBNB",
+    "address": "0x2dc61e8c703cf027876a7a7437d92b46d47d34db",
+    "qr": "/image/bnb.jpeg"
+  },
+  "-O3m4n5o6": {
+    "name": "Solana",
+    "network": "Solana",
+    "address": "EHvEDu5oFnCo7b4E1o6Nuad79ycZAbELhXiJbz7gZz37",
+    "qr": "/image/sol.jpeg"
+  },
+  "-O3p7q8r9": {
+    "name": "Dash",
+    "network": "Dash",
+    "address": "XjigyU3QRZrtVSa2Q6qLsofHhs1HVHjMCE",
+    "qr": "/image/dash.jpeg"
+  },
+  "-O3s1t2u3": {
+    "name": "OG Chain",
+    "network": "OG Chain",
+    "address": "0x2dc61e8c703cf027876a7a7437d92b46d47d34db",
+    "qr": "/image/og.jpeg"
+  }
+}

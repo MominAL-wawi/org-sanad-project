@@ -1,0 +1,92 @@
+{
+  "-O1a1b2c3": {
+    "id": 1,
+    "titleAr": "مشروع الإغاثة الطارئة",
+    "titleEn": "Emergency Relief Project",
+    "descriptionAr": "تقديم الدعم العاجل للمتضررين أثناء وبعد الأزمات والحروب.",
+    "descriptionEn": "Providing urgent support to those affected during and after crises and wars.",
+    "fullTextAr": "هذا المشروع يهدف إلى تقديم الدعم العاجل والمساعدات الإنسانية للمتضررين.",
+    "fullTextEn": "This project aims to provide urgent aid and humanitarian support to those affected.",
+    "imageUrl": "/image/project1/1.jpeg"
+  },
+  "-O2d4e5f6": {
+    "id": 2,
+    "titleAr": "مشروع التنمية المستدامة",
+    "titleEn": "Sustainable Development Project",
+    "descriptionAr": "تنفيذ مشاريع تعليمية وتنموية تعزز الاعتماد على الذات وتقلل التبعية.",
+    "descriptionEn": "Implementing educational and developmental projects that promote self-reliance and reduce dependency.",
+    "fullTextAr": "يشمل المشروع برامج تعليمية وتنموية متعددة لتقوية المجتمع المحلي.",
+    "fullTextEn": "The project includes multiple educational and developmental programs to strengthen the local community.",
+    "imageUrl": "/image/project2/1.jpeg"
+  },
+  "-O3g7h8i9": {
+    "id": 3,
+    "titleAr": "مشروع التمكين والدعم",
+    "titleEn": "Empowerment & Support Project",
+    "descriptionAr": "تقديم التوجيه النفسي والتعليمي والقانوني للضحايا، مع التركيز على الفئات الضعيفة.",
+    "descriptionEn": "Offering psychological, instructional, and legal guidance to victims, with a focus on vulnerable groups.",
+    "fullTextAr": "يوفر المشروع جلسات تدريبية واستشارات لدعم الفئات المستضعفة.",
+    "fullTextEn": "The project provides training sessions and consultations to support vulnerable groups.",
+    "imageUrl": "/image/project3/1.jpeg"
+  },
+  "-O4j1k2l3": {
+    "id": 4,
+    "titleAr": "مشروع حقوق الإنسان والمناصرة",
+    "titleEn": "Human Rights & Advocacy Project",
+    "descriptionAr": "توثيق الانتهاكات وتعزيز حقوق الإنسان والحقوق المدنية للفلسطينيين.",
+    "descriptionEn": "Documenting violations and promoting the human and civil rights of Palestinians.",
+    "fullTextAr": "يعمل المشروع على توعية المجتمع بحقوق الإنسان والمناصرة القانونية.",
+    "fullTextEn": "The project raises community awareness of human rights and legal advocacy.",
+    "imageUrl": "/image/project4/1.jpeg"
+  },
+  "-O5m4n5o6": {
+    "id": 5,
+    "titleAr": "مشروع الشراكات العالمية",
+    "titleEn": "Global Partnerships Project",
+    "descriptionAr": "بناء شراكات محلية وإقليمية ودولية ودعم المبادرات الشعبية داخل غزة.",
+    "descriptionEn": "Building local, regional, and international partnerships while supporting grassroots initiatives within Gaza.",
+    "fullTextAr": "يركز المشروع على التعاون الدولي لدعم المشاريع التنموية والمحلية.",
+    "fullTextEn": "The project focuses on international cooperation to support developmental and local initiatives.",
+    "imageUrl": "/image/project5/1.jpeg"
+  },
+  "-O6p7q8r9": {
+    "id": 6,
+    "titleAr": "مشروع التعليم والتدريب",
+    "titleEn": "Education & Training Project",
+    "descriptionAr": "توفير برامج تعليمية وتدريبية متنوعة للفئات المستهدفة.",
+    "descriptionEn": "Providing diverse educational and training programs for target groups.",
+    "fullTextAr": "يشمل المشروع دورات تعليمية ومهارات عملية للشباب والنساء.",
+    "fullTextEn": "The project includes educational courses and practical skills for youth and women.",
+    "imageUrl": "/image/project6/1.jpeg"
+  },
+  "-O7s1t2u3": {
+    "id": 7,
+    "titleAr": "مشروع الصحة والرعاية",
+    "titleEn": "Health & Care Project",
+    "descriptionAr": "تقديم الرعاية الصحية الأساسية والخدمات الطبية للفئات المحتاجة.",
+    "descriptionEn": "Providing basic healthcare and medical services to those in need.",
+    "fullTextAr": "يتضمن المشروع عيادات متنقلة وحملات توعية صحية.",
+    "fullTextEn": "The project includes mobile clinics and health awareness campaigns.",
+    "imageUrl": "/image/project7/1.jpeg"
+  },
+  "-O8v3w4x5": {
+    "id": 8,
+    "titleAr": "مشروع البنية التحتية والمرافق",
+    "titleEn": "Infrastructure & Facilities Project",
+    "descriptionAr": "تحسين المرافق العامة وتطوير البنية التحتية الأساسية في المناطق المستهدفة.",
+    "descriptionEn": "Improving public facilities and developing essential infrastructure in target areas.",
+    "fullTextAr": "يشمل المشروع صيانة المباني والمدارس والمراكز المجتمعية.",
+    "fullTextEn": "The project includes maintenance of buildings, schools, and community centers.",
+    "imageUrl": "/image/project8/1.jpeg"
+  },
+  "-O9y5z6a7": {
+    "id": 9,
+    "titleAr": "مشروع الدعم الطارئ الإضافي",
+    "titleEn": "Additional Emergency Support Project",
+    "descriptionAr": "تقديم دعم عاجل إضافي للفئات المتضررة.",
+    "descriptionEn": "Providing additional urgent support to affected groups.",
+    "fullTextAr": "يشمل المشروع توزيع المواد الغذائية والمساعدات العاجلة.",
+    "fullTextEn": "The project includes distribution of food and emergency aid.",
+    "imageUrl": "/image/project3/3.jpeg"
+  }
+}
