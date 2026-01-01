@@ -1,10 +1,49 @@
-# الهيئة الإنسانية لإغاثة وتنمية غزة - سند
 
-موقع إلكتروني للهيئة الإنسانية لإغاثة وتنمية غزة "سند" مبني باستخدام Vue.js 3 و Bootstrap 5.
+# 🕊️ Sanad Humanitarian Organization Website
 
-## البنية
+📍 **Live Demo:** https://org-sanad.netlify.app/  
+📦 **Source Code:** https://github.com/MominAL-wawi/org-sanad-project
 
-```
+---
+
+## 🌟 Project Overview
+
+**Sanad Humanitarian Organization Platform** is a modern and responsive website built for a humanitarian NGO. The platform showcases organizational projects, supports multiple languages, and offers an integrated donation system designed for ease of use, accessibility, and scalability.
+
+This project aims to provide a professional web presence for NGOs and humanitarian institutions, enabling them to present their work and collect donations securely and efficiently.
+
+---
+
+## 🎯 Key Features
+
+✅ Modern, responsive UI/UX  
+✅ Donation pages for supporting the organization  
+✅ Project showcase with dynamic content  
+✅ Multilingual support (Arabic/English or more)  
+✅ Clean and scalable structure suitable for future expansion  
+✅ Easy to customize for other organizations
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5 & CSS3**
+- **JavaScript (ES6+)**
+- **Bootstrap (Responsive Design)**
+- **Vue.js (Optional – if used in the project)**
+- **Netlify for Deployment**
+
+---
+
+## 🚀 Live Demo
+
+Experience the platform online:  
+🌐 https://org-sanad.netlify.app/
+
+---
+
+## 📁 Project Structure
+
 src/
 ├── assets/
 │   └── style.css
@@ -21,49 +60,71 @@ src/
 │   └── DonatePage.vue
 ├── App.vue
 └── main.js
-```
 
-## الصفحات
+yaml
+نسخ الكود
 
-1. **الصفحة الرئيسية** - نظرة عامة على الهيئة وقيمها
-2. **من نحن** - تعريف مفصل بالهيئة ورؤيتها ورسالتها وأهدافها
-3. **المشاريع** - عرض المشاريع والأقسام المختلفة
-4. **التواصل** - معلومات الاتصال ورابط واتساب
-5. **التبرع** - خيارات التبرع البنكي والعملات الرقمية
+---
 
-## التثبيت والتشغيل
+## 🧩 Installation & Setup
+
+To run this project locally:
+
+1. Clone the repository:
 
 ```bash
-# تثبيت المكتبات
-npm install
+git clone https://github.com/MominAL-wawi/org-sanad-project.git
+Navigate into the project folder:
 
-# تشغيل بيئة التطوير
-npm run dev
+bash
+نسخ الكود
+cd org-sanad-project
+Open the project in your browser:
 
-# بناء المشروع للإنتاج
-npm run build
+Open index.html directly
+or
 
-# معاينة البناء
-npm run preview
-```
+Use a live server extension (VSCode or similar)
 
-## التقنيات المستخدمة
+📌 Usage
+✔ You can use this project as a template for:
 
-- Vue.js 3 (Composition API)
-- Vue Router 4
-- Bootstrap 5 RTL (للدعم العربي)
-- Vite (أداة البناء)
-- خط Tajawal من Google Fonts
+NGO websites
 
-## الميزات
+Charity platforms
 
-- دعم كامل للغة العربية مع RTL
-- تصميم متجاوب يعمل على جميع الأجهزة
-- نظام تنقل باستخدام Vue Router
-- إمكانية نسخ عناوين المحافظ والحسابات البنكية
-- رموز QR للعملات الرقمية
-- رابط واتساب للتواصل المباشر
+Donation campaigns
 
-## الترخيص
+Nonprofit institutions
 
-© 2025 الهيئة الإنسانية لإغاثة وتنمية غزة - سند. جميع الحقوق محفوظة.
+✔ Easy to enhance with:
+
+Payment gateways (Stripe, PayPal)
+
+Backend integration (Node.js, Laravel, Firebase)
+
+CMS integration (WordPress, Headless CMS)
+
+💡 Future Improvements
+✔ Add secure payment integration (Stripe / PayPal)
+✔ Build a backend for managing projects and donations
+✔ Add admin dashboard
+✔ Expand multilingual options
+✔ Improve accessibility and SEO
+
+🤝 Contribution
+Contributions, suggestions, and feedback are welcome!
+Feel free to open issues or submit pull requests.
+
+📜 License
+This project is open-source and available under the MIT License.
+
+📬 Contact
+Momin Ahmed Rezq Alwawi
+📧 eng.mominwawi@gmail.com
+🌐 Portfolio: https://momin-portfolio-project.netlify.app/
+GitHub: https://github.com/MominAL-wawi
+
+yaml
+نسخ الكود
+ - سند. جميع الحقوق محفوظة.
