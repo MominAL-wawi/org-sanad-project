@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <!-- Added Welcome Modal -->
+    <WelcomeModal />
     <router-view />
     <!-- Added scroll to top button -->
     <ScrollToTop />
@@ -11,6 +13,7 @@
 </template>
 
 <script setup>
+import WelcomeModal from "./components/WelcomeModal.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 import WhatsAppButton from "./components/WhatsAppButton.vue";
 import DonateButton from "./components/DonateButton.vue";
