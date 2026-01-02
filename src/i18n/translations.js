@@ -277,6 +277,14 @@ export const translations = {
       thankYouText: "تبرعاتكم تصنع فرقاً حقيقياً في حياة الأسر المحتاجة في غزة",
       contactButton: "تواصل معنا للاستفسار",
     },
+    modal: {
+      title: "الاستقلال والحياد",
+      orgName: "سند",
+      message:
+        "هي منظمة تعمل باستقلالية تامة. نحن لا نتشارك مع أي من الأطراف المتورطة في النزاع، ولا نتلقى أي تمويل منهم. مهمتنا مكرسة حصرياً لسلامة ورفاهية المدنيين.",
+      footerMessage: "رسالتنا واضحة: من الناس إلى الناس",
+      button: "فهمت",
+    },
     footer: {
       title: "الهيئة الإنسانية - سند",
       description:
@@ -578,8 +586,16 @@ export const translations = {
         "Your donations make a real difference in the lives of families in need in Gaza",
       contactButton: "Contact Us for Inquiries",
     },
+    modal: {
+      title: "Independence & Neutrality",
+      orgName: "Sanad",
+      message:
+        "is an organization which operates with strict independence. We do not partner with, nor receive funding from, any parties involved in the conflict. Our mission is dedicated exclusively to the safety and well-being of civilians.",
+      footerMessage: "Our message is clear: from people to people",
+      button: "I Understand",
+    },
     footer: {
-      title: "Sanad Humanitarian Organization",
+      title: "Humanitarian Organization - Sanad",
       description:
         "An independent humanitarian development organization focused on providing urgent relief and supporting sustainable development in Gaza",
       quickLinks: "Quick Links",
