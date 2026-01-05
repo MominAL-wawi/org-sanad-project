@@ -297,6 +297,27 @@ export const translations = {
       copyright:
         "© 2025 الهيئة الإنسانية لإغاثة وتنمية غزة - سند. جميع الحقوق محفوظة.",
     },
+    chairmanMessage: {
+      title: "كلمة رئيس الهيئة الإنسانية لإغاثة وتنمية غزة «سند»",
+      name: "أيمن طارق أبو عيشة",
+      position: "رئيس الهيئة",
+      bismillah: "بسم الله الرحمن الرحيم",
+      content: `
+        <p>في ظل ما يمرّ به قطاع غزة من ظروف إنسانية قاسية وتحديات متراكمة، تؤكد الهيئة الإنسانية لإغاثة وتنمية غزة «سند» التزامها الثابت بالوقوف إلى جانب أهلنا، والعمل الدؤوب على تخفيف معاناتهم، وتعزيز صمودهم، وحماية كرامتهم الإنسانية.</p>
+        
+        <p>لقد أُسست هيئة «سند» إيمانًا بأن العمل الإنساني مسؤولية أخلاقية ووطنية، ورسالة تقوم على العطاء، والشفافية، والشراكة، واستدامة الأثر. ومنذ انطلاقتنا، سعينا إلى تقديم برامج إغاثية وتنموية تستجيب للاحتياجات العاجلة، وتؤسس في الوقت ذاته لمسارات تنموية تُمكّن الإنسان وتمنحه الأمل بمستقبل أفضل.</p>
+        
+        <p>إننا في «سند» نعمل وفق رؤية واضحة ترتكز على خدمة الإنسان دون تمييز، والتعاون مع شركائنا المحليين والدوليين، وتوظيف الموارد بأقصى درجات الكفاءة والمسؤولية، لضمان وصول المساعدات إلى مستحقيها وتحقيق أكبر أثر ممكن.</p>
+        
+        <p>ونؤكد أن نجاحنا ما كان ليتحقق لولا ثقة أهلنا، ودعم شركائنا، وجهود طواقمنا والمتطوعين الذين يعملون بإخلاص في الميدان رغم كل التحديات. لهم جميعًا نوجّه خالص الشكر والتقدير.</p>
+        
+        <p>سنواصل في هيئة «سند» أداء رسالتنا الإنسانية، مستمدّين العزم من معاناة أهلنا، والأمل من إيماننا بأن التضامن والعمل المشترك قادران على صناعة الفرق.</p>
+        
+        <p><strong>والله وليّ التوفيق</strong></p>
+      `,
+      signature: "رئيس الهيئة",
+      organization: "الهيئة الإنسانية لإغاثة وتنمية غزة «سند»",
+    },
   },
   en: {
     nav: {
@@ -605,6 +626,29 @@ export const translations = {
       emailLabel: "Email:",
       copyright:
         "© 2025 Humanitarian Organization for Relief and Development of Gaza - Sanad. All rights reserved.",
+    },
+    chairmanMessage: {
+      title:
+        "Message from the Chairman of the Humanitarian Organization for Relief and Development of Gaza 'Sanad'",
+      name: "Ayman Tariq Abu Aisha",
+      position: "Chairman of the Organization",
+      bismillah: "In the name of Allah, the Most Gracious, the Most Merciful",
+      content: `
+        <p>Amid the harsh humanitarian conditions and accumulated challenges facing the Gaza Strip, the Humanitarian Organization for Relief and Development of Gaza "Sanad" affirms its unwavering commitment to stand by our people, working tirelessly to alleviate their suffering, strengthen their resilience, and protect their human dignity.</p>
+        
+        <p>"Sanad" was founded on the belief that humanitarian work is a moral and national responsibility, and a mission based on giving, transparency, partnership, and sustainable impact. Since our inception, we have sought to provide relief and development programs that respond to urgent needs, while simultaneously establishing developmental pathways that empower people and give them hope for a better future.</p>
+        
+        <p>At "Sanad," we work according to a clear vision centered on serving humanity without discrimination, cooperating with our local and international partners, and deploying resources with the highest levels of efficiency and responsibility to ensure aid reaches those who deserve it and achieves the greatest possible impact.</p>
+        
+        <p>We affirm that our success would not have been achieved without the trust of our people, the support of our partners, and the efforts of our teams and volunteers who work with dedication in the field despite all challenges. To all of them, we extend our sincere thanks and appreciation.</p>
+        
+        <p>We will continue at "Sanad" to fulfill our humanitarian mission, drawing determination from the suffering of our people and hope from our belief that solidarity and joint action can make a difference.</p>
+        
+        <p><strong>May Allah grant us success</strong></p>
+      `,
+      signature: "Chairman of the Organization",
+      organization:
+        "Humanitarian Organization for Relief and Development of Gaza 'Sanad'",
     },
   },
 };
