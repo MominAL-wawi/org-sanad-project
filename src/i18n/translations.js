@@ -299,21 +299,23 @@ export const translations = {
     },
     chairmanMessage: {
       title: "كلمة رئيس الهيئة الإنسانية لإغاثة وتنمية غزة «سند»",
-      name: "أيمن طارق أبو عيشة",
+      name: "أيمن فايق أبو عيشة",
       position: "رئيس الهيئة",
-      bismillah: "بسم الله الرحمن الرحيم",
+      bismillah: "بسم الله الرحمن الرحيم،",
       content: `
-        <p>في ظل ما يمرّ به قطاع غزة من ظروف إنسانية قاسية وتحديات متراكمة، تؤكد الهيئة الإنسانية لإغاثة وتنمية غزة «سند» التزامها الثابت بالوقوف إلى جانب أهلنا، والعمل الدؤوب على تخفيف معاناتهم، وتعزيز صمودهم، وحماية كرامتهم الإنسانية.</p>
+        <p>في ظلّ ما يمرّ به قطاع غزة من ظروف إنسانية بالغة القسوة، وتحديات مركّبة ومتراكمة، تؤكّد الهيئة الإنسانية لإغاثة وتنمية غزة «سند» التزامها الراسخ بالوقوف إلى جانب أهلنا، وبذل أقصى الجهود لتخفيف معاناتهم، وتعزيز صمودهم، وصون كرامتهم الإنسانية.</p>
         
-        <p>لقد أُسست هيئة «سند» إيمانًا بأن العمل الإنساني مسؤولية أخلاقية ووطنية، ورسالة تقوم على العطاء، والشفافية، والشراكة، واستدامة الأثر. ومنذ انطلاقتنا، سعينا إلى تقديم برامج إغاثية وتنموية تستجيب للاحتياجات العاجلة، وتؤسس في الوقت ذاته لمسارات تنموية تُمكّن الإنسان وتمنحه الأمل بمستقبل أفضل.</p>
+        <p>لقد تأسّست هيئة «سند» انطلاقًا من إيمان عميق بأن العمل الإنساني ليس مجرّد استجابة طارئة، بل مسؤولية أخلاقية ووطنية، ورسالة إنسانية سامية تقوم على مبادئ العطاء، والنزاهة، والشفافية، والشراكة الفاعلة، واستدامة الأثر. ومنذ انطلاقتنا، عملنا على تصميم وتنفيذ برامج إغاثية وتنموية تستجيب للاحتياجات العاجلة، وتؤسّس في الوقت ذاته لمسارات تنموية مستدامة، تمكّن الإنسان، وتعيد إليه الأمل بمستقبل أكثر كرامة وأمانًا، وذلك ضمن أطر واضحة من الحوكمة الرشيدة، والمعايير المهنية، والشفافية المؤسسية.</p>
         
-        <p>إننا في «سند» نعمل وفق رؤية واضحة ترتكز على خدمة الإنسان دون تمييز، والتعاون مع شركائنا المحليين والدوليين، وتوظيف الموارد بأقصى درجات الكفاءة والمسؤولية، لضمان وصول المساعدات إلى مستحقيها وتحقيق أكبر أثر ممكن.</p>
+        <p>وقد حرصنا على بناء نظام حوكمة متكامل ينظّم العلاقة بين المانحين وإدارة الهيئة، ويضمن أعلى مستويات المساءلة والرقابة، بما يكفل سلامة الإجراءات، ونزاهة الأداء، وفعالية البرامج والأنشطة المنفّذة.</p>
         
-        <p>ونؤكد أن نجاحنا ما كان ليتحقق لولا ثقة أهلنا، ودعم شركائنا، وجهود طواقمنا والمتطوعين الذين يعملون بإخلاص في الميدان رغم كل التحديات. لهم جميعًا نوجّه خالص الشكر والتقدير.</p>
+        <p>إننا في هيئة «سند» نعمل وفق رؤية إنسانية واضحة، ترتكز على خدمة الإنسان دون أيّ تمييز، وتعزيز التعاون مع شركائنا المحليين والدوليين، وتوظيف الموارد المتاحة بأقصى درجات الكفاءة والمسؤولية، بما يضمن وصول المساعدات إلى مستحقّيها، وتحقيق أثر ملموس ومستدام في حياة الفئات الأكثر احتياجًا.</p>
         
-        <p>سنواصل في هيئة «سند» أداء رسالتنا الإنسانية، مستمدّين العزم من معاناة أهلنا، والأمل من إيماننا بأن التضامن والعمل المشترك قادران على صناعة الفرق.</p>
+        <p>ونؤكّد أن ما تحقق من إنجازات ما كان له أن يرى النور لولا ثقة أهلنا، ودعم شركائنا، والجهود المخلصة التي تبذلها طواقمنا ومتطوّعونا، الذين يواصلون العمل في الميدان بروحٍ عالية وإخلاصٍ عميق، رغم التحديات الجسيمة والظروف الاستثنائية. لهم جميعًا نتقدّم بخالص الشكر وعظيم التقدير.</p>
         
-        <p><strong>والله وليّ التوفيق</strong></p>
+        <p>وستواصل هيئة «سند»، بعون الله، أداء رسالتها الإنسانية، مستمدّة العزم من معاناة أهلنا، ومستلهِمة الأمل من إيماننا الراسخ بأن التضامن الصادق، والعمل المشترك، قادران على إحداث الفرق، وصناعة مستقبلٍ أكثر عدلًا وإنسانية.</p>
+        
+        <p><strong>والله وليّ التوفيق.</strong></p>
       `,
       signature: "رئيس الهيئة",
       organization: "الهيئة الإنسانية لإغاثة وتنمية غزة «سند»",
@@ -628,27 +630,28 @@ export const translations = {
         "© 2025 Humanitarian Organization for Relief and Development of Gaza - Sanad. All rights reserved.",
     },
     chairmanMessage: {
-      title:
-        "Message from the Chairman of the Humanitarian Organization for Relief and Development of Gaza 'Sanad'",
-      name: "Ayman Tariq Abu Aisha",
+      title: "Message from the Chairman of Sanad Humanitarian Organization",
+      name: "Ayman Fayeq Abu Aisha",
       position: "Chairman of the Organization",
-      bismillah: "In the name of Allah, the Most Gracious, the Most Merciful",
+      bismillah: "In the name of Allah, the Most Gracious, the Most Merciful,",
       content: `
-        <p>Amid the harsh humanitarian conditions and accumulated challenges facing the Gaza Strip, the Humanitarian Organization for Relief and Development of Gaza "Sanad" affirms its unwavering commitment to stand by our people, working tirelessly to alleviate their suffering, strengthen their resilience, and protect their human dignity.</p>
+        <p>In light of the extremely harsh humanitarian conditions and complex, accumulated challenges facing the Gaza Strip, the Humanitarian Organization for Relief and Development of Gaza "Sanad" affirms its steadfast commitment to standing by our people, making every effort to alleviate their suffering, strengthen their resilience, and preserve their human dignity.</p>
         
-        <p>"Sanad" was founded on the belief that humanitarian work is a moral and national responsibility, and a mission based on giving, transparency, partnership, and sustainable impact. Since our inception, we have sought to provide relief and development programs that respond to urgent needs, while simultaneously establishing developmental pathways that empower people and give them hope for a better future.</p>
+        <p>Sanad was established from a deep belief that humanitarian work is not merely an emergency response, but a moral and national responsibility, and a noble humanitarian mission based on the principles of giving, integrity, transparency, active partnership, and sustainable impact. Since our inception, we have worked to design and implement relief and development programs that respond to urgent needs while simultaneously establishing sustainable development pathways that empower people and restore their hope for a more dignified and secure future, all within clear frameworks of good governance, professional standards, and institutional transparency.</p>
         
-        <p>At "Sanad," we work according to a clear vision centered on serving humanity without discrimination, cooperating with our local and international partners, and deploying resources with the highest levels of efficiency and responsibility to ensure aid reaches those who deserve it and achieves the greatest possible impact.</p>
+        <p>We have been keen to build an integrated governance system that regulates the relationship between donors and the organization's management, ensuring the highest levels of accountability and oversight, which guarantees the integrity of procedures, the integrity of performance, and the effectiveness of implemented programs and activities.</p>
         
-        <p>We affirm that our success would not have been achieved without the trust of our people, the support of our partners, and the efforts of our teams and volunteers who work with dedication in the field despite all challenges. To all of them, we extend our sincere thanks and appreciation.</p>
+        <p>At Sanad, we work according to a clear humanitarian vision, centered on serving people without any discrimination, strengthening cooperation with our local and international partners, and deploying available resources with the utmost efficiency and responsibility, to ensure that aid reaches those who deserve it and achieves a tangible and sustainable impact on the lives of the most vulnerable groups.</p>
         
-        <p>We will continue at "Sanad" to fulfill our humanitarian mission, drawing determination from the suffering of our people and hope from our belief that solidarity and joint action can make a difference.</p>
+        <p>We affirm that the achievements made would not have seen the light of day without the trust of our people, the support of our partners, and the sincere efforts made by our staff and volunteers, who continue to work in the field with high spirits and deep dedication, despite the enormous challenges and exceptional circumstances. To all of them, we extend our sincere thanks and great appreciation.</p>
         
-        <p><strong>May Allah grant us success</strong></p>
+        <p>Sanad will continue, with God's help, to fulfill its humanitarian mission, drawing determination from the suffering of our people, and inspiration from our firm belief that sincere solidarity and joint action are capable of making a difference and creating a future that is more just and humane.</p>
+        
+        <p><strong>And Allah is the source of success.</strong></p>
       `,
       signature: "Chairman of the Organization",
       organization:
-        "Humanitarian Organization for Relief and Development of Gaza 'Sanad'",
+        'Humanitarian Organization for Relief and Development of Gaza "Sanad"',
     },
   },
 };
