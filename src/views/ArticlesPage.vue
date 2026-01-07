@@ -245,8 +245,9 @@
         </div>
       </div>
     </section>
-
-    <AppFooter />
+    <div class="footer-spacing">
+      <AppFooter />
+    </div>
   </div>
 </template>
 
@@ -452,6 +453,10 @@ const handleImageError = (event) => {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   background: white;
   border: none;
+}
+.footer-spacing {
+  padding-top: 120px;
+  background-color: #f5f7fa; /* نفس لون الصفحة */
 }
 
 .article-card:hover {
