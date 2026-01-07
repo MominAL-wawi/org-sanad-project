@@ -37,38 +37,48 @@
       </div>
     </section>
 
-    <!-- Adding Chairman's Message Section -->
+    <!-- Updated Chairman's Message Section -->
     <section class="chairman-section">
       <div class="container">
         <h2 class="section-title animate-fade-in text-center mb-5">
           {{ t.chairmanMessage.title }}
         </h2>
-        <div class="row align-items-center g-5">
-          <div class="col-lg-5 text-center animate-slide-right">
-            <div class="chairman-image-wrapper">
-              <img
-                src="/image/aa.jpeg"
-                alt="رئيس الهيئة - أيمن طارق أبو عيشة"
-                class="chairman-image"
-              />
-              <div class="chairman-name-badge">
-                <h4 class="mb-1">{{ t.chairmanMessage.name }}</h4>
-                <p class="mb-0 text-muted">{{ t.chairmanMessage.position }}</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="chairman-card animate-slide-up">
+              <!-- Chairman Image at the top with name and position below -->
+              <div class="text-center mb-5 mm">
+                <div class="chairman-image-wrapper-new">
+                  <img
+                    src="/image/aa.jpeg"
+                    alt="رئيس الهيئة - أيمن فايق أبو عيشة"
+                    class="chairman-image-new"
+                  />
+                </div>
+                <!-- Name and position in a card below the image -->
+                <div class="chairman-name-card mt-4">
+                  <h3 class="chairman-name mb-2">
+                    {{ t.chairmanMessage.name }}
+                  </h3>
+                  <p class="chairman-position mb-0">
+                    {{ t.chairmanMessage.position }}
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-7 animate-slide-left">
-            <div class="chairman-message-content">
-              <div class="bismillah mb-4">
-                {{ t.chairmanMessage.bismillah }}
-              </div>
-              <div
-                class="message-text"
-                v-html="t.chairmanMessage.content"
-              ></div>
-              <div class="chairman-signature mt-4">
-                <p class="fw-bold mb-1">{{ t.chairmanMessage.signature }}</p>
-                <p class="text-muted">{{ t.chairmanMessage.organization }}</p>
+
+              <!-- Chairman Message below -->
+              <div class="chairman-message-content-new">
+                <div class="bismillah mb-4">
+                  {{ t.chairmanMessage.bismillah }}
+                </div>
+                <div
+                  class="message-text"
+                  v-html="t.chairmanMessage.content"
+                ></div>
+                <div class="chairman-signature mt-4">
+                  <p class="fw-bold mb-1">{{ t.chairmanMessage.signature }}</p>
+                  <p class="text-muted">{{ t.chairmanMessage.organization }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -303,46 +313,90 @@ const values = computed(() => [
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.chairman-image-wrapper {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.chairman-image {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 15px 50px rgba(139, 36, 36, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.chairman-image:hover {
-  transform: scale(1.02);
-}
-
-.chairman-name-badge {
-  background: linear-gradient(135deg, #8b2424 0%, #a82e2e 100%);
-  color: white;
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-top: -30px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 10px 30px rgba(139, 36, 36, 0.3);
-}
-
-.chairman-message-content {
+.chairman-card {
   background: white;
   padding: 3rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  border-right: 5px solid #8b2424;
+}
+
+.chairman-image-wrapper-new {
+  display: inline-block;
+  position: relative;
+}
+
+.chairman-image-new {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(139, 36, 36, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid #8b2424;
+}
+
+.chairman-image-new:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 70px rgba(139, 36, 36, 0.35);
+}
+
+.chairman-name-card {
+  background: linear-gradient(135deg, #8b2424 0%, #a82e2e 100%);
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  display: inline-block;
+  min-width: 350px;
+  box-shadow: 0 15px 40px rgba(139, 36, 36, 0.4);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.chairman-name-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(139, 36, 36, 0.5);
+}
+
+.mm {
+  display: flex;
+  flex-direction: column; /* يجعل العناصر تحت بعض */
+  align-items: center;
+}
+
+.chairman-image-wrapper-new {
+  margin-bottom: 20px; /* مسافة بين الصورة والتعريف */
+}
+
+.chairman-name-card {
+  text-align: center;
+}
+
+.chairman-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chairman-position {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f0e68c;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.chairman-message-content-new {
+  padding: 2rem 0;
+  border-top: 3px solid #8b2424;
+  margin-top: 2rem;
 }
 
 .bismillah {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #8b2424;
   text-align: center;
   font-family: "Amiri", serif;
@@ -358,17 +412,54 @@ const values = computed(() => [
 .chairman-signature {
   border-top: 2px solid #e9ecef;
   padding-top: 1.5rem;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
-  .chairman-message-content {
-    padding: 2rem;
-    border-right: none;
-    border-top: 5px solid #8b2424;
+  .chairman-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .chairman-image-new {
+    width: 280px;
+    height: 280px;
+  }
+
+  .chairman-name-card {
+    min-width: 280px;
+    padding: 1.5rem 2rem;
+  }
+
+  .chairman-name {
+    font-size: 1.5rem;
+  }
+
+  .chairman-position {
+    font-size: 1.1rem;
   }
 
   .chairman-section {
     padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .chairman-image-new {
+    width: 240px;
+    height: 240px;
+  }
+
+  .chairman-name-card {
+    min-width: 240px;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .chairman-name {
+    font-size: 1.3rem;
+  }
+
+  .chairman-position {
+    font-size: 1rem;
   }
 }
 </style>
