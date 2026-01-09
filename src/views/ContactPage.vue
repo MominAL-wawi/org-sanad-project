@@ -198,8 +198,63 @@
           </div>
         </div>
 
+        <!-- Professional Social Media Section -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <div
+              class="card social-media-card animate-slide-up"
+              style="animation-delay: 0.4s"
+            >
+              <div class="card-body p-5 text-center">
+                <h3 class="h4 fw-bold mb-3">
+                  {{
+                    isArabic
+                      ? "تابعنا على وسائل التواصل الاجتماعي"
+                      : "Follow Us on Social Media"
+                  }}
+                </h3>
+                <p class="text-muted mb-4">
+                  {{
+                    isArabic
+                      ? "تابع أحدث أخبارنا ومشاريعنا وتحديثاتنا الإنسانية"
+                      : "Follow our latest news, projects, and humanitarian updates"
+                  }}
+                </p>
+                <div class="social-links-grid">
+                  <a
+                    href="https://youtube.com/@sanad_gazaaid?si=OeduTDk4C89St-Er"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-link-card youtube"
+                  >
+                    <div class="social-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93-.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="social-text">
+                      <h5 class="mb-1">YouTube</h5>
+                      <p class="mb-0">
+                        {{ isArabic ? "@sanad_gazaaid" : "@sanad_gazaaid" }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- WhatsApp Section -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center whatsapp-section">
           <div class="col-lg-8">
             <div
               class="card animate-slide-up card-hover-lift"
@@ -233,18 +288,13 @@
 </template>
 
 <script setup>
-// biome-ignore lint/correctness/useHookAtTopLevel: False positive - hooks are at top level
 import { computed, ref } from "vue";
 import AppHeader from "../components/AppHeader.vue";
 import AppFooter from "../components/AppFooter.vue";
-// biome-ignore lint/correctness/useHookAtTopLevel: False positive - hooks are at top level
 import { useLanguageStore } from "../store/language";
-// biome-ignore lint/correctness/useHookAtTopLevel: False positive - hooks are at top level
 import { translations } from "../i18n/translations";
 
-// biome-ignore lint/correctness/useHookAtTopLevel: False positive - hooks are at top level
-const { currentLanguage } = useLanguageStore();
-// biome-ignore lint/correctness/useHookAtTopLevel: False positive - hooks are at top level
+const { currentLanguage, isArabic } = useLanguageStore();
 const t = computed(() => translations[currentLanguage.value]);
 
 const formData = ref({
@@ -290,6 +340,10 @@ const handleSubmit = () => {
 </script>
 
 <style scoped>
+.whatsapp-section {
+  margin-bottom: 80px; /* عدّل الرقم حسب الذوق */
+}
+
 .contact-form .form-control {
   border-radius: 8px;
   border: 2px solid #e9ecef;
@@ -310,5 +364,80 @@ const handleSubmit = () => {
 .contact-form textarea.form-control {
   resize: vertical;
   min-height: 120px;
+}
+
+/* Added professional social media card styles */
+.social-media-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.social-links-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: white;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  min-width: 280px;
+}
+
+.social-link-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.social-link-card.youtube {
+  color: #ff0000;
+}
+
+.social-link-card.youtube:hover {
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: white;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-link-card.youtube:hover .social-icon {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.social-text h5 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.social-text p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .social-link-card {
+    min-width: 100%;
+  }
 }
 </style>
