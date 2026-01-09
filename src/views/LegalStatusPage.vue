@@ -61,9 +61,7 @@
               </div>
               <div class="col-md-6">
                 <div class="info-item">
-                  <label class="fw-bold text-muted mb-2">{{
-                    t.contact.phone
-                  }}</label>
+                  <label class="fw-bold text-muted mb-2">phone</label>
                   <div class="info-box">
                     <a
                       :href="`tel:${t.contact.phone}`"
@@ -76,9 +74,7 @@
               </div>
               <div class="col-md-6">
                 <div class="info-item">
-                  <label class="fw-bold text-muted mb-2">{{
-                    t.contact.email
-                  }}</label>
+                  <label class="fw-bold text-muted mb-2"> email </label>
                   <div class="info-box">
                     <a
                       :href="`mailto:${t.contact.email}`"
