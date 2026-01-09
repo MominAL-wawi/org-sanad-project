@@ -37,6 +37,69 @@
       </div>
     </section>
 
+    <section class="stats-section animate-fade-in">
+      <div class="container">
+        <div class="row text-center">
+          <div
+            v-for="(stat, index) in stats"
+            :key="stat.label"
+            class="col-6 col-md-3 mb-4 mb-md-0 animate-slide-up"
+            :style="`animation-delay: ${index * 0.1}s`"
+          >
+            <div class="stat-number">
+              <span v-if="stat.isNumber"
+                >{{ animatedStats[index] }}{{ stat.suffix }}</span
+              >
+              <span v-else>{{ stat.number }}</span>
+            </div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title animate-fade-in">{{ t.about.values }}</h2>
+        <p class="section-description animate-fade-in">
+          {{ t.values.sectionDescription }}
+        </p>
+        <div class="row g-4">
+          <div
+            v-for="(value, index) in values"
+            :key="value.title"
+            class="col-md-6 col-lg-3"
+          >
+            <div
+              class="card text-center h-100 card-hover-lift animate-slide-up"
+              :style="`animation-delay: ${index * 0.1}s`"
+            >
+              <div class="card-body">
+                <div class="icon-wrapper primary icon-pulse">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <h5 class="card-title fw-bold">{{ value.title }}</h5>
+                <p class="card-text text-muted leading-relaxed">
+                  {{ value.description }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Updated Chairman's Message Section -->
     <section class="chairman-section">
       <div class="container">
@@ -85,70 +148,6 @@
         </div>
       </div>
     </section>
-
-    <section class="stats-section animate-fade-in">
-      <div class="container">
-        <div class="row text-center">
-          <div
-            v-for="(stat, index) in stats"
-            :key="stat.label"
-            class="col-6 col-md-3 mb-4 mb-md-0 animate-slide-up"
-            :style="`animation-delay: ${index * 0.1}s`"
-          >
-            <div class="stat-number">{{ stat.number }}</div>
-            <div class="stat-label">{{ stat.label }}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title animate-fade-in">{{ t.about.values }}</h2>
-        <p class="section-description animate-fade-in">
-          {{
-            isArabic
-              ? "نلتزم في عملنا بمجموعة من القيم الأساسية التي توجه مسيرتنا"
-              : "We are committed to a set of core values that guide our journey"
-          }}
-        </p>
-        <div class="row g-4">
-          <div
-            v-for="(value, index) in values"
-            :key="value.title"
-            class="col-md-6 col-lg-3"
-          >
-            <div
-              class="card text-center h-100 card-hover-lift animate-slide-up"
-              :style="`animation-delay: ${index * 0.1}s`"
-            >
-              <div class="card-body">
-                <div class="icon-wrapper primary icon-pulse">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <h5 class="card-title fw-bold">{{ value.title }}</h5>
-                <p class="card-text text-muted leading-relaxed">
-                  {{ value.description }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section
       class="bg-gradient-primary text-white"
       style="margin-bottom: 0; padding-bottom: 4rem"
@@ -185,7 +184,7 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref, onMounted } from "vue";
 import AppHeader from "../components/AppHeader.vue";
 import AppFooter from "../components/AppFooter.vue";
 import { useLanguageStore } from "../store/language";
@@ -194,29 +193,86 @@ import { translations } from "../i18n/translations";
 const { currentLanguage, isArabic } = useLanguageStore();
 const t = computed(() => translations[currentLanguage.value]);
 
+const animatedStats = ref([0, 0, 0, 0]);
+
 const stats = computed(() => [
-  { number: "50+", label: "Sponsored Children" },
-  { number: "8", label: "Active Projects" },
-  { number: "1000+", label: "Beneficiary Families" },
-  { number: "24/7", label: "Quick Response" },
+  {
+    number: 50,
+    suffix: "+",
+    label: t.value.stats.sponsoredChildren,
+    isNumber: true,
+  },
+  {
+    number: 8,
+    suffix: "",
+    label: t.value.stats.activeProjects,
+    isNumber: true,
+  },
+  {
+    number: 1000,
+    suffix: "+",
+    label: t.value.stats.beneficiaryFamilies,
+    isNumber: true,
+  },
+  {
+    number: visitorCount.value,
+    suffix: "",
+    label: isArabic.value ? "زائر للموقع" : "Website Visitors",
+    isNumber: true,
+  },
 ]);
+
+const visitorCount = ref(0);
+
+onMounted(() => {
+  // Load and increment visitor count
+  const storedCount = localStorage.getItem("sanad_visitor_count");
+  const currentCount = storedCount ? parseInt(storedCount) : 1247; // Starting from a base number
+  visitorCount.value = currentCount + 1;
+  localStorage.setItem("sanad_visitor_count", visitorCount.value.toString());
+
+  // Animate all stats including visitor count
+  const duration = 2000; // 2 seconds
+  const fps = 60;
+  const totalFrames = (duration / 1000) * fps;
+
+  stats.value.forEach((stat, index) => {
+    if (stat.isNumber) {
+      let frame = 0;
+      const increment = stat.number / totalFrames;
+
+      const counter = setInterval(() => {
+        frame++;
+        animatedStats.value[index] = Math.min(
+          Math.floor(increment * frame),
+          stat.number
+        );
+
+        if (frame >= totalFrames) {
+          clearInterval(counter);
+          animatedStats.value[index] = stat.number;
+        }
+      }, 1000 / fps);
+    }
+  });
+});
 
 const values = computed(() => [
   {
-    title: "Transparency",
-    description: "We commit to transparency in all our work",
+    title: t.value.values.transparency.title,
+    description: t.value.values.transparency.description,
   },
   {
-    title: "Justice",
-    description: "We promote human justice for all",
+    title: t.value.values.justice.title,
+    description: t.value.values.justice.description,
   },
   {
-    title: "Sincerity",
-    description: "We work sincerely to serve the community",
+    title: t.value.values.sincerity.title,
+    description: t.value.values.sincerity.description,
   },
   {
-    title: "Responsibility",
-    description: "We carry social responsibility",
+    title: t.value.values.responsibility.title,
+    description: t.value.values.responsibility.description,
   },
 ]);
 </script>
