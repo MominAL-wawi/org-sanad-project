@@ -70,6 +70,28 @@
                 <p class="card-text text-muted leading-relaxed flex-grow-1">
                   {{ isArabic ? project.descriptionAr : project.descriptionEn }}
                 </p>
+                <!-- Add donation button for each project -->
+                <div class="mt-3">
+                  <router-link
+                    to="/donate"
+                    class="btn btn-primary w-100 donate-btn-project"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-heart-fill me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                      />
+                    </svg>
+                    {{ isArabic ? "تبرع للمشروع" : "Donate to Project" }}
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -335,6 +357,48 @@ const handleImageError = (event) => {
   }
   50% {
     opacity: 0.8;
+  }
+}
+
+.donate-btn-project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.donate-btn-project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.3);
+}
+
+.donate-btn-project svg {
+  transition: transform 0.3s ease;
+}
+
+.donate-btn-project:hover svg {
+  transform: scale(1.2);
+  animation: heartbeat 0.6s ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.25);
   }
 }
 
